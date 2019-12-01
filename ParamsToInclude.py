@@ -16,11 +16,11 @@ from itertools import product
 #         return runs
 
 
-# params = OrderDict(
-#     ls=[.01],
-#     batch_size=[1000, 2000],
-#     shuffle=[True, False]
-# )
+params = OrderDict(
+    ls=[.01],
+    batch_size=[1000, 2000],
+    shuffle=[True, False]
+)
 
 m = RunManager()
 for run in RunManager.get_runs(params):
