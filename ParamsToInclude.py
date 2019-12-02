@@ -16,7 +16,7 @@ from itertools import product
 #         return runs
 
 
-params = OrderDict(
+params = OrderedDict(
     ls=[.01],
     batch_size=[1000, 2000],
     shuffle=[True, False]
