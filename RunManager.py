@@ -3,6 +3,8 @@ import torchvision
 import pandas as pd
 import torch
 import json
+from collections import OrderedDict, namedtuple
+from itertools import product
 
 
 class RunManager():
@@ -105,6 +107,7 @@ class RunManager():
         Run = namedtuple('Run', params.keys())
 
         runs = []
+        # Cartesian Product
         for v in product(*params.values()):
             runs.append(Run(*v))
 
